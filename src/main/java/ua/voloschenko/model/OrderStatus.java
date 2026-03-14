@@ -1,4 +1,4 @@
-package ua.voloschenko;
+package ua.voloschenko.model;
 
 public enum OrderStatus {
 

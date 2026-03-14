@@ -1,4 +1,4 @@
-package ua.voloschenko;
+package ua.voloschenko.model;
 
 import java.util.Arrays;
 import java.util.Objects;

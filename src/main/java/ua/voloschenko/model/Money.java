@@ -1,4 +1,6 @@
-package ua.voloschenko;
+package ua.voloschenko.model;
+
+import ua.voloschenko.exceptions.ValidationException;
 
 import java.util.Objects;
 

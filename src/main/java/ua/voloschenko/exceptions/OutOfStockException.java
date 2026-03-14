@@ -1,4 +1,4 @@
-package ua.voloschenko;
+package ua.voloschenko.exceptions;
 
 public class OutOfStockException extends AppException {
 

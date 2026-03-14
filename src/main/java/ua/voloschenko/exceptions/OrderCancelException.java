@@ -1,5 +1,4 @@
-package ua.voloschenko;
-import ua.voloschenko.OrderStatus;
+package ua.voloschenko.exceptions;
 
 public class OrderCancelException extends RuntimeException {
     public OrderCancelException(String message) {

@@ -25,6 +25,10 @@ public class Money {
         return new Money(discount*amount, this.currency);
     }
 
+    public Money multiply(double mult) {
+        return new Money(mult*amount, this.currency);
+    }
+
     public double getAmount() {
         return amount;
     }

@@ -6,7 +6,7 @@ public class Email {
 
     public Email(String email) {
         if(email == null || !email.contains("@"))
-            throw new IllegalArgumentException("Invalid email address");
+            throw new ValidationException("Invalid email address");
     }
 
     public String getValue() {

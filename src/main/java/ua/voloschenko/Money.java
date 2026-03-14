@@ -9,10 +9,10 @@ public class Money {
 
     public Money(double amount, String currency) {
         if((amount < 0) )
-            throw new IllegalArgumentException("Amount must be positive");
+            throw new ValidationException("Amount must be positive");
 
         if(currency == null || currency.isEmpty())
-            throw new IllegalArgumentException("Currency must be non-empty");
+            throw new ValidationException("Currency must be non-empty");
 
         this.amount = amount;
         this.currency = currency;
@@ -20,7 +20,7 @@ public class Money {
 
     public Money discount(double percent) {
         if(percent < 0)
-            throw new IllegalArgumentException("Discount percent must be positive");
+            throw new ValidationException("Discount percent must be positive");
         double discount = 1 - percent / 100;
         return new Money(discount*amount, this.currency);
     }

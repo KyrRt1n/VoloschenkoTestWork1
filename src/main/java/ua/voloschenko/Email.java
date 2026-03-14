@@ -7,6 +7,7 @@ public class Email {
     public Email(String email) {
         if(email == null || !email.contains("@"))
             throw new ValidationException("Invalid email address");
+        this.email = email;
     }
 
     public String getValue() {
